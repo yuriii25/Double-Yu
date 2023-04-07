@@ -1,21 +1,3 @@
-/* no padding parallax */
-#parallax {
-  padding: 0;
-  filter: grayscale();
-  background-image: url("../assets/pattern.jpg");
-  background-color: #2a2a2a;
-  width: 100%;
-  height: 400px;
-  margin: 0;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 40px;
-}
-
-
 /* Set smooth scroll behavior for the whole document */
 html {
   scroll-behavior: smooth;
@@ -38,6 +20,8 @@ header {
 /* Set styles for the navigation bar */
 .nav_links{
   display:flex;
+  flex-direction: row;
+
   background-color:  #eae0cb;
   padding: 25px;
   text-align: left;
@@ -233,4 +217,3 @@ footer {
   border-radius: 8px;
 }
 
-/* Add comments to explain the code */
