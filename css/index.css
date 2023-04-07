@@ -1,3 +1,21 @@
+/*index.html*/
+/* no padding parallax */
+#parallax {
+  padding: 0;
+  filter: grayscale();
+  background-image: url("../assets/pattern.jpg");
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
 /* Set smooth scroll behavior for the whole document */
 html {
   scroll-behavior: smooth;
@@ -35,31 +53,13 @@ header {
 
 .nav_item a:hover, a:focus{
   color: #50C7C7;
+}
+
+#activepage{
+  background-color: #50C7C7;
   text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  border:rgb(42, 94, 49) solid 1px;
 }
-
-/*nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.nav a:hover{
-  text-decoration: underline;
-} */
 
 
 /* Set styles for the "skip to main content" link */
@@ -86,24 +86,8 @@ a.skip:focus{
   grid-gap: 16px;
   color: rgb(42, 94, 49);
   margin: auto;
-  justify-self: center;
-  align-self: center;
   text-align: center;
 }
-
-/* .inline {
-  top: 50%;
-  width: 24rem;
-  margin: 0 auto;
-  border-right: 2px solid rgb(42, 94, 49);
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.animated-text {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             text-cursor 500ms steps(44) infinite normal;
-} */
 
 .about h1 {
   font-size: 50px;
@@ -141,7 +125,7 @@ a.skip:focus{
 @media screen and (max-width: 800px) { 
   .nav-links {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       padding-top: 5px;
   }
   .nav-item {
@@ -217,3 +201,8 @@ footer {
   border-radius: 8px;
 }
 
+/* Add comments to explain the code */
+/* yuna.html style */
+.yunaintro img{
+width: 300px;
+}
