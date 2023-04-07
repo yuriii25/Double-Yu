@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
-        <!--link rel="stylesheet" type="text/css" href="css/html5reset.css"-->
-        <!--link rel="stylesheet" type="text/css" href="css/style.css"-->
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Home</title>
     </head>
     <body>
@@ -16,7 +16,6 @@
             <nav>
                 <ul class= "nav_links">
                     <li class= "nav_item"><a href= "#skip">Hello</a></li>
-                    <li class= "nav_item"><a href= "home.html">Home</a></li>
                     <li class= "nav_item"><a href= "index.html">Index</a></li>
                     <li class= "nav_item"><a href= "yuna.html">Yuna</a></li>
                     <li class= "nav_item"><a href= "yuri.html">Yuri</a></li>
@@ -25,22 +24,22 @@
             </nav>
         </header>
         <main class="about" id="skip">
+            <div class="about-text" >
             <h1>Hello</h1>
-            <p>
+            <p class="inline animated-text">
                 We are Yuri and Yuna! 
-
             </p>
+            </div>
             <div class="cliparts">
-                <video width="320" height="240" controls loop>
+                <video controls loop>
                     <source src="images/Yunayuri.mov" type="video/mp4">
                 </video>
 
             </div>
-            <h2 id="about_us">About Us<meta name="description" content=""></h2>
-                <p>Things to write about us, how we meet, etc.</p>
+            <div id="topics" class="topic-container">
                 <div class="card">
                       <h3>Where We Met</h3>
-                      <br><h4>Markley Hall, __Hall </h4>
+                      <br><h4>Markley Hall, Butler Hall </h4>
                       <br>First night of move in, Yuna knocked on Yuri's door three rooms down.
                       <br>We have been best friends since:)
                   </div>
@@ -56,6 +55,7 @@
                     <br>
                     <a href="yuri.html" class="button">Learn More</a>
                   </div>
+                </div>
         </main>
         <footer>
             <p>University of Michigan School of Information <br/>
