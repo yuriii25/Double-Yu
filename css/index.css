@@ -1,0 +1,236 @@
+/* no padding parallax */
+#parallax {
+  padding: 0;
+  filter: grayscale();
+  background-image: url("../assets/pattern.jpg");
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+
+/* Set smooth scroll behavior for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set default styles for the whole document */
+body {
+  background-color: #eae0cb;
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 auto;
+}
+
+header {
+  background: #eae0cb;
+  padding: 15px;
+  display: flex;
+}
+
+/* Set styles for the navigation bar */
+.nav_links{
+  display:flex;
+  background-color:  #eae0cb;
+  padding: 25px;
+  text-align: left;
+  
+}
+
+.nav_item a{
+  padding: 10px;
+  color: rgb(42, 94, 49);
+}
+
+.nav_item a:hover, a:focus{
+  color: #50C7C7;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+/*nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+} */
+
+
+/* Set styles for the "skip to main content" link */
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+/* Set styles for the main content */
+.about {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 16px;
+  color: rgb(42, 94, 49);
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+/* .inline {
+  top: 50%;
+  width: 24rem;
+  margin: 0 auto;
+  border-right: 2px solid rgb(42, 94, 49);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.animated-text {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             text-cursor 500ms steps(44) infinite normal;
+} */
+
+.about h1 {
+  font-size: 50px;
+  margin: 15px;
+}
+
+.about p {
+  font-size: 40px;
+  margin: 15px;
+}
+
+.about_us h2 {
+  color: rgb(42, 94, 49);
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.cliparts {
+  float: right;
+  width: 100%;
+  
+}
+
+.topic-container {
+  /* display: grid;
+  grid-template-columns: repeat(5, auto); */
+  /* justify-self: center; */
+  /* align-content: center; */
+  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+@media screen and (max-width: 800px) { 
+  .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 5px;
+  }
+  .nav-item {
+      padding: 5px;
+  }
+
+  .topic-container {
+      grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+  .nav-item {
+      padding: 5px;
+      margin: 5px;
+  }
+}
+
+.card {
+  margin: 30px;
+  border:  1px solid rgb(42, 94, 49);
+  padding: 20px;
+  flex-basis: 450px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.card h3 {
+  color: rgb(42, 94, 49);
+  font-size: 40px;
+  text-decoration: underline;
+  line-height: 1.5;
+}
+
+.card h4 {
+  color: rgb(42, 94, 49);
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.topic-container :hover {
+  background-color: rgb(223, 191, 183)
+}
+
+/* Set styles for the footer */
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  grid-row: 1/-1;
+  text-align: center;
+}
+
+/* Set styles for the "Learn More" buttons */
+.button {
+  display: inline-block;
+  background-color: #ddd;
+  color: black;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Add comments to explain the code */
