@@ -24,27 +24,41 @@ html {
 /* Set default styles for the whole document */
 body {
   background-color: #eae0cb;
-  font-size: 30px;
+  font-size: 16px;
+  /* font-size: 30px; */
   line-height: 1.15;
   margin: 0 auto;
+}
+main {
+  margin-left: 15px;
 }
 
 header {
   background: #eae0cb;
-  padding: 15px;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto; 
+
 }
+
 
 /* Set styles for the navigation bar */
-.nav_links{
-  display:flex;
-  flex-direction: row;
-
+.nav_links {
+  display:flex; 
+  flex-direction: column; 
+  font-size: 15px; 
   background-color:  #eae0cb;
-  padding: 25px;
-  text-align: left;
-  
+  padding: 25px; 
 }
+
+#logo {
+  display: block; 
+  width: 80px; 
+  height: auto; 
+  margin: 0 15px;
+}
+
 
 .nav_item a{
   padding: 10px;
@@ -95,57 +109,37 @@ a.skip:focus{
 }
 
 .about p {
-  font-size: 40px;
+  font-size: 30px;
   margin: 15px;
 }
 
-.about_us h2 {
-  color: rgb(42, 94, 49);
-  font-size: 40px;
-  line-height: 1.5;
-}
 
 .cliparts {
-  float: right;
-  width: 100%;
+  margin: 0 auto; 
+  object-fit: contain;
   
 }
 
 .topic-container {
-  /* display: grid;
-  grid-template-columns: repeat(5, auto); */
-  /* justify-self: center; */
-  /* align-content: center; */
-  /* justify-content: center; */
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 800px) { 
-  .nav-links {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 5px;
-  }
-  .nav-item {
-      padding: 5px;
-  }
-
-  .topic-container {
-      grid-template-columns: auto;
-  }
-}
-
-@media screen and (max-width: 550px) { 
-  .nav-links {
-      flex-direction: column;
-      align-items: center;
-  }
-  .nav-item {
-      padding: 5px;
-      margin: 5px;
-  }
+/* Set styles for the "Learn More" buttons */
+.button {
+  display: inline-block;
+  background-color: #ddd;
+  color: black;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .card {
@@ -186,23 +180,203 @@ footer {
   text-align: center;
 }
 
-/* Set styles for the "Learn More" buttons */
-.button {
-  display: inline-block;
-  background-color: #ddd;
-  color: black;
-  border: none;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
+
+
+
+/*yuna.html*/
+.yunaintro{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1px;
+  margin: 20px;
+  width: 80%;
+  margin: 0 auto;
+  }
+.yunaintro img:nth-child(1){
+  display: grid;
+  grid-column: 2/6;
+  grid-row: 1/12;
+}
+.yunaintro img:nth-child(2){
+  display: none;
+}
+.yunaintro img:nth-child(3){
+  display: none;
+}
+.yunaintro img:nth-child(4){
+  display: none;
+}
+.yunaintro p{
+  display: grid;
+  grid-column: 2/6;
+  grid-row: 13/14;
 }
 
-/* Add comments to explain the code */
-/* yuna.html style */
-.yunaintro img{
-width: 300px;
+.yuna h1{
+  font-size: 30px;
+  color: rgb(42, 94, 49);
+  text-align: center;
 }
+.yuna p{
+  font-size: 20px;
+  color: rgb(42, 94, 49);
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  margin: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.flip-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Show the front of the flip-card by default */
+.flip-card-front {
+  display: grid;
+  grid-column: 1 span 1;
+  /* grid-column: 1 span 1; */
+} 
+
+.flip-card-front img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+} 
+
+.flip-card-back {
+  display: grid;
+  grid-column: 2 span 1;
+} 
+
+.flip-card:hover .flip-card-back {
+  background-color: rgb(223, 191, 183);
+} 
+
+/* Tablet styles */
+
+@media (min-width: 768px) {
+  /* Show the navigation links as a horizontal list */
+  .nav_links {
+    display:flex; 
+    flex-direction: row; 
+    font-size: 15px; 
+    background-color:  #eae0cb;
+    padding: 25px; 
+  }
+ 
+  .topic-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .yunaintro img:nth-child(2){
+    display: grid;
+    width: 60%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-content: flex-end;
+  }
+  .yunaintro img:nth-child(3){
+    display: grid;
+    width: 60%;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-content: flex-end;
+  }
+  .yunaintro img:nth-child(4){
+    display: grid;
+    width: 60%;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    align-content: flex-end;
+  }
+
+}
+
+/* Large screen styles */
+
+@media (min-width: 1200px) {
+  /* Add a sidebar for the navigation */
+  .nav_links {
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+      width: 70px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+  }
+
+  /* Center the logo in the sidebar */
+  #logo {
+      margin: 1rem auto;
+  }
+
+  /* Adjust the font size for large screens */
+  body {
+      font-size: 20px;
+      margin-left: 75px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 20px;
+    justify-items: center;
+    align-items: center;
+    } 
+  
+    .flip-card{
+      display: flex;
+
+    }
+  
+    .flip-card-front {
+      display: block;
+    } 
+    
+    .flip-card-front img{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    } 
+    
+    .flip-card-back {
+      display: none;
+    } 
+  
+    .flip-card:hover .flip-card-front {
+      display:none;
+    } 
+  
+    .flip-card:hover .flip-card-back {
+      display:block;
+    } 
+    
+  /* Reduce the animation speed */
+  @media (prefers-reduced-motion: reduce) {
+      .animated-text {
+          animation-duration: 0s !important;
+      }
+  }
+}
+
+
