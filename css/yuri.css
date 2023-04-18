@@ -33,7 +33,7 @@ body {
     font-family: "kopik", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: rgb(42, 94, 49);;
+    color: rgb(42, 94, 49);
     font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400;
@@ -53,7 +53,7 @@ body {
 
 #activepage{
     background-color: #ffffff;
-    border-bottom: 2px solid rgb(42, 94, 49);;
+    border-bottom: 2px solid rgb(42, 94, 49);
 } 
 
 nav {
@@ -79,7 +79,7 @@ nav {
   }
   
   .nav_item a:hover {
-    color: rgb(42, 94, 49);;
+    color: rgb(42, 94, 49);
   }
   
   .nav_item a:hover::after {
@@ -89,38 +89,13 @@ nav {
     width: 0;
     position: absolute;
     bottom: -2px;
-    background-color: rgb(42, 94, 49);;
+    background-color: rgb(42, 94, 49);
     transition: width 0.3s ease-in-out;
   }
   
   .nav_item a:hover::after {
     width: 100%;
   }
-
-
-
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-    
-  }
-
- 
-#gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: opacity 0.25s ease-in-out;
-}
-
-#gallery img:hover, img:focus{
-    opacity: 0.7;
-}
 
 /* Set styles for the "skip to main content" link */
 a.skip{
@@ -146,8 +121,8 @@ a.skip{
     display:flex; 
     flex-direction: row;  
     background-color:  #ece7e1;
-    padding: 25px; }
-}
+    padding: 25px; 
+}}
 /* Large screen styles */
 
 @media (min-width: 1200px) {
@@ -165,8 +140,7 @@ a.skip{
         position: fixed;
         height: 100%;
         overflow: auto;
-    }
-}
+    }}
 
 @media (prefers-reduced-motion: reduce) {
     .animated-text {

@@ -23,18 +23,23 @@ html {
 
 /* Set default styles for the whole document */
 body {
-  background-color: #eae0cb;
-  font-size: 16px;
-  /* font-size: 30px; */
-  line-height: 1.15;
-  margin: 0 auto;
+  background-color: #ece7e1;
+  font-family: "kopik", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(42, 94, 49);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0;
 }
+
 main {
   margin-left: 15px;
 }
 
 header {
-  background: #eae0cb;
+  background: #ece7e1;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -44,36 +49,63 @@ header {
 
 
 /* Set styles for the navigation bar */
-.nav_links {
-  display:flex; 
-  flex-direction: column; 
-  font-size: 15px; 
-  background-color:  #eae0cb;
-  padding: 25px; 
-}
-
 #logo {
-  display: block; 
-  width: 80px; 
-  height: auto; 
-  margin: 0 15px;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  height: auto;
+  padding-bottom: 20px;
 }
 
-
-.nav_item a{
-  padding: 10px;
-  color: rgb(42, 94, 49);
-}
-
-.nav_item a:hover, a:focus{
-  color: #50C7C7;
-}
 
 #activepage{
-  background-color: #50C7C7;
-  text-decoration: underline;
-  border:rgb(42, 94, 49) solid 1px;
+  background-color: #ffffff;
+  border-bottom: 2px solid rgb(42, 94, 49);;
+} 
+
+nav {
+  display: flex;
+  justify-content: center;
 }
+
+.nav_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: #1e251d;
+  position: relative;
+}
+
+.nav_item a:hover {
+  color: rgb(42, 94, 49);;
+}
+
+.nav_item a:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  background-color: rgb(42, 94, 49);;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav_item a:hover::after {
+  width: 100%;
+}
+
 
 
 /* Set styles for the "skip to main content" link */
@@ -269,9 +301,8 @@ footer {
   /* Show the navigation links as a horizontal list */
   .nav_links {
     display:flex; 
-    flex-direction: row; 
-    font-size: 15px; 
-    background-color:  #eae0cb;
+    flex-direction: row;  
+    background-color:  #ece7e1;
     padding: 25px; 
   }
  
@@ -316,8 +347,10 @@ footer {
       top: 0;
       margin: 0;
       padding: 0;
-      width: 70px;
+      width: 150px;
       background-color: #f1f1f1;
+      font-size: 1.25rem;
+      
       position: fixed;
       height: 100%;
       overflow: auto;
