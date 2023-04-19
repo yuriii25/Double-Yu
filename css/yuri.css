@@ -1,273 +1,291 @@
 /* no padding parallax */
 #parallax {
-    padding: 0;
-    filter: grayscale();
-    background-image: url("../assets/pattern.jpg");
-    background-color: #2a2a2a;
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 40px;
-  }
+  padding: 0;
+  filter: grayscale();
+  background-image: url("../assets/pattern.jpg");
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
 
 /* Set smooth scroll behavior for the whole document */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 h1{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 body {
-    margin: 0;
-    min-height: 100%;
-    background-color: #ece7e1;
-    font-family: "kopik", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: rgb(42, 94, 49);
-    font-size: 1.25rem;
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: 0;
+  margin: 0;
+  min-height: 100%;
+  background-color: #ece7e1;
+  font-family: "kopik", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(42, 94, 49);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 #logo {
-    display: block;
-    width: 80px;
-    margin: 0 auto;
-    position: relative;
-    top: 10px;
-    height: auto;
-    padding-bottom: 20px;
-  }
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  height: auto;
+  padding-bottom: 20px;
+}
 
 
 #activepage{
-    background-color: #ffffff;
-    border-bottom: 2px solid rgb(42, 94, 49);
+  background-color: #ffffff;
+  border-bottom: 2px solid rgb(42, 94, 49);
 } 
 
 nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav_item {
-    display: inline-block;
-    margin: 0 20px;
-  }
-  
-  .nav_item a {
-    text-decoration: none;
-    color: #1e251d;
-    position: relative;
-  }
-  
-  .nav_item a:hover {
-    color: rgb(42, 94, 49);
-  }
-  
-  .nav_item a:hover::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    position: absolute;
-    bottom: -2px;
-    background-color: rgb(42, 94, 49);
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .nav_item a:hover::after {
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: #1e251d;
+  position: relative;
+}
+
+.nav_item a:hover {
+  color: rgb(42, 94, 49);
+}
+
+.nav_item a:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  background-color: rgb(42, 94, 49);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav_item a:hover::after {
+  width: 100%;
+}
 
 /* Set styles for the "skip to main content" link */
 a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
-  }
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
 footer {
-    background-color: black;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    grid-row: 1/-1;
-    text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  grid-row: 1/-1;
+  text-align: center;
 }
 
 /*yuri.html*/
 .yuriintro{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1px;
-    margin: 20px;
-    width: 80%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1px;
+  margin: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .yuriintro img:nth-child(1){
-    display: grid;
-    grid-column: 2/6;
-    grid-row: 1/12;
+  display: grid;
+  grid-column: 2/6;
+  grid-row: 1/12;
 }
 
 .yuriintro p{
-    display: grid;
-    grid-column: 2/6;
-    grid-row: 13/14;
+  display: grid;
+  grid-column: 2/6;
+  grid-row: 13/14;
 }
 
 .yuri h1{
-    font-size: 30px;
-    color: rgb(42, 94, 49);
-    text-align: center;
-  }
+  font-size: 30px;
+  color: rgb(42, 94, 49);
+  text-align: center;
+}
 .yuri p{
-    font-size: 20px;
-    color: rgb(42, 94, 49);
-    text-align: center;
+  font-size: 20px;
+  color: rgb(42, 94, 49);
+  text-align: center;
 }
 
 #about_us{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Carousel*/
 .carousel {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Set the height of the carousel */
-    overflow: auto;
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .carousel-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
-  }
-  
-  .carousel-item.active {
-    opacity: 1;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    width: 50px; /* Set the width of the control buttons */
-    height: 50px; /* Set the height of the control buttons */
-    background-color: rgba(255, 255, 255, 0.5); /* Set the background color of the control buttons */
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Set the hover background color of the control buttons */
-    color: #fff;
-  }
-  
-  .carousel-control-prev {
-    left: 20px; /* Set the left position of the previous button */
-  }
-  
-  .carousel-control-next {
-    right: 20px; /* Set the right position of the next button */
-  }
+  position: relative;
+  width: 100%;
+  height: 500px; /* Set the height of the carousel */
+  overflow: auto;
+}
 
-  /*tablet*/
-  @media (min-width: 768px) {
-    /* Show the navigation links as a horizontal list */
-    .menu {
-        display:flex; 
-        flex-direction: row;  
-        background-color:  #ece7e1;
-        padding: 25px; 
-    }}
-    
-    /* Large screen styles */
-    
-    @media (min-width: 1200px) {
-        /* Add a sidebar for the navigation */
-        .menu {
-            flex-direction: column;
-            left: 0;
-            top: 0;
-            margin: 0;
-            padding: 0;
-            width: 150px;
-            background-color: #f1f1f1;
-            font-size: 1.25rem;
-            
-            position: fixed;
-            height: 100%;
-            overflow: auto;
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 50px; /* Set the width of the control buttons */
+  height: 50px; /* Set the height of the control buttons */
+  background-color: rgba(255, 255, 255, 0.5); /* Set the background color of the control buttons */
+  border-radius: 50%;
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Set the hover background color of the control buttons */
+  color: #fff;
+}
+
+.carousel-control-prev {
+  left: 20px; /* Set the left position of the previous button */
+}
+
+.carousel-control-next {
+  right: 20px; /* Set the right position of the next button */
+}
+
+.carousel-item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+  /* Show the navigation links as a horizontal list */
+  .menu {
+      display:flex; 
+      flex-direction: row;  
+      background-color:  #ece7e1;
+      padding: 25px; 
+  }}
+  
+  /* Large screen styles */
+  
+  @media (min-width: 1200px) {
+      /* Add a sidebar for the navigation */
+      .menu {
+          flex-direction: column;
+          left: 0;
+          top: 0;
+          margin: 0;
+          padding: 0;
+          width: 150px;
+          background-color: #f1f1f1;
+          font-size: 1.25rem;
+          
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+      }
+      .carousel-item p {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+      }
+
+      .carousel-item{
+          left: 150px;
+      }
+      .carousel-control-prev {
+          left: 170px; /* Set the left position of the previous button */
         }
-        .carousel-item{
-            left: 150px;
-        }
-        .carousel-control-prev {
-            left: 170px; /* Set the left position of the previous button */
-          }
-    }
-    
-    @media (prefers-reduced-motion: reduce) {
-        .animated-text {
-            animation-duration: 0s !important;
-        }
-    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      .animated-text {
+          animation-duration: 0s !important;
+      }
+  }
