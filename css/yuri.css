@@ -147,10 +147,15 @@ footer {
 
 .yuri h1{
   font-size: 30px;
-
   color: rgb(42, 94, 49);
   text-align: center;
 }
+
+.yuri h1 * { 
+  color: rgb(42, 94, 49);
+  text-decoration: none;
+}
+
 .yuri p{
   font-size: 20px;
   color: rgb(42, 94, 49);
