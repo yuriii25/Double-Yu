@@ -232,9 +232,10 @@ footer {
         transition: transform 0.2s ease-out;
     }
 
-    #gallery img:hover{
+    #gallery img:hover, img:focus{
         transform: scale(1.2);
         box-shadow: 0 0 15px #000000;
+        z-index: 10;
     }
 }
 
