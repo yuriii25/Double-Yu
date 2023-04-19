@@ -33,7 +33,7 @@ body {
     font-family: "kopik", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: rgb(42, 94, 49);;
+    color: rgb(42, 94, 49);
     font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400;
@@ -53,7 +53,7 @@ body {
 
 #activepage{
     background-color: #ffffff;
-    border-bottom: 2px solid rgb(42, 94, 49);;
+    border-bottom: 2px solid rgb(42, 94, 49);
 } 
 
 nav {
@@ -109,7 +109,16 @@ nav {
     align-items: center;
 }
 
+h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+p{
+    padding-bottom: 30px;
+}
+
 #gallery {
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;
@@ -124,11 +133,15 @@ nav {
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-    transition: opacity 0.25s ease-in-out;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: filter 0.25s ease-in-out;
 }
 
 #gallery img:hover, img:focus{
-    opacity: 0.7;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    opacity: 100%;
 }
 
 /* Set styles for the "skip to main content" link */
@@ -147,6 +160,15 @@ a.skip{
     top:20px;
     color: black;
     text-decoration-style: solid;
+  }
+  
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-row: 1/-1;
+    text-align: center;
   }
 
 /*tablet view*/
@@ -207,6 +229,12 @@ a.skip{
     #gallery img {
         width: 300px;
         height: 300px;
+        transition: transform 0.2s ease-out;
+    }
+
+    #gallery img:hover{
+        transform: scale(1.2);
+        box-shadow: 0 0 15px #000000;
     }
 }
 

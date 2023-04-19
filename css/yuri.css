@@ -114,36 +114,160 @@ a.skip{
     color: black;
     text-decoration-style: solid;
   }
-
-@media (min-width: 768px) {
-/* Show the navigation links as a horizontal list */
-.menu {
-    display:flex; 
-    flex-direction: row;  
-    background-color:  #ece7e1;
-    padding: 25px; 
-}}
-/* Large screen styles */
-
-@media (min-width: 1200px) {
-    /* Add a sidebar for the navigation */
-    .menu {
-        flex-direction: column;
-        left: 0;
-        top: 0;
-        margin: 0;
-        padding: 0;
-        width: 150px;
-        background-color: #f1f1f1;
-        font-size: 1.25rem;
-        
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-    }}
-
-@media (prefers-reduced-motion: reduce) {
-    .animated-text {
-        animation-duration: 0s !important;
-    }
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-row: 1/-1;
+    text-align: center;
 }
+
+/*yuri.html*/
+.yuriintro{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1px;
+    margin: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.yuriintro img:nth-child(1){
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 1/12;
+}
+
+.yuriintro p{
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 13/14;
+}
+
+.yuri h1{
+    font-size: 30px;
+    color: rgb(42, 94, 49);
+    text-align: center;
+  }
+.yuri p{
+    font-size: 20px;
+    color: rgb(42, 94, 49);
+    text-align: center;
+}
+
+#about_us{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Carousel*/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set the height of the carousel */
+    overflow: auto;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 50px; /* Set the width of the control buttons */
+    height: 50px; /* Set the height of the control buttons */
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color of the control buttons */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the hover background color of the control buttons */
+    color: #fff;
+  }
+  
+  .carousel-control-prev {
+    left: 20px; /* Set the left position of the previous button */
+  }
+  
+  .carousel-control-next {
+    right: 20px; /* Set the right position of the next button */
+  }
+
+  /*tablet*/
+  @media (min-width: 768px) {
+    /* Show the navigation links as a horizontal list */
+    .menu {
+        display:flex; 
+        flex-direction: row;  
+        background-color:  #ece7e1;
+        padding: 25px; 
+    }}
+    
+    /* Large screen styles */
+    
+    @media (min-width: 1200px) {
+        /* Add a sidebar for the navigation */
+        .menu {
+            flex-direction: column;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            background-color: #f1f1f1;
+            font-size: 1.25rem;
+            
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .carousel-item{
+            left: 150px;
+        }
+        .carousel-control-prev {
+            left: 170px; /* Set the left position of the previous button */
+          }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        .animated-text {
+            animation-duration: 0s !important;
+        }
+    }
