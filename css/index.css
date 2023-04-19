@@ -140,7 +140,7 @@ a.skip:focus{
   margin: 15px;
 }
 
-.about p {
+.about h2 {
   font-size: 30px;
   margin: 15px;
 }
@@ -246,6 +246,11 @@ footer {
 
 .yuna h1{
   font-size: 30px;
+  color: rgb(42, 94, 49);
+  text-align: center;
+}
+.yuna p{
+  font-size: 20px;
   color: rgb(42, 94, 49);
   text-align: center;
 }
@@ -411,5 +416,7 @@ footer {
       }
   }
 }
+
+
 
 
