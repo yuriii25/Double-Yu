@@ -147,6 +147,7 @@ footer {
 
 .yuri h1{
   font-size: 30px;
+
   color: rgb(42, 94, 49);
   text-align: center;
 }
@@ -163,6 +164,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: underline;
 }
 
 /*Carousel*/
