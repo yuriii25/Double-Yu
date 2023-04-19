@@ -157,6 +157,7 @@ footer {
 }
 
 #about_us{
+  padding: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
