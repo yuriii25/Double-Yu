@@ -238,18 +238,6 @@ footer {
   right: 20px; /* Set the right position of the next button */
 }
 
-.carousel-item p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
-
 /*tablet*/
 @media (min-width: 768px) {
   /* Show the navigation links as a horizontal list */
@@ -277,11 +265,6 @@ footer {
           position: fixed;
           height: 100%;
           overflow: auto;
-      }
-      .carousel-item p {
-        position: absolute;
-        top: 50%;
-        left: 40%;
       }
 
       .carousel-item{
